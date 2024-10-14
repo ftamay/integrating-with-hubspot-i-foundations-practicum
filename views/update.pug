@@ -1,0 +1,27 @@
+doctype html
+html
+  head
+    title= `${title}`
+    link(rel='stylesheet', href='/css/style.css')
+  body
+    h1= `${title}`
+    form(action='/update-cobj', method='POST')
+      label(for='dealname') Name:
+      input(type='text', id='dealname', name='dealname', required)
+      br
+      label(for='dealstage') State:
+      select(name="dealstage", id="dealstage")
+                option(value="appointmentscheduled") Appointment Scheduled
+                option(value="qualifiedtobuy") Qualified to Buy
+                option(value="presentationscheduled") Presentation Scheduled
+                option(value="decisionmakerboughtin") Decision Maker Bought In
+                option(value="contractsent") Contract Sent
+                option(value="closedwon") Closed Won
+                option(value="closedlost") Closed Lost
+      br
+      label(for='amount') Amount:
+      input(type='number', id='amount', name='amount', required)
+      br
+      button(type='submit') Send
+    br
+    a(href='/') Return to the homepage

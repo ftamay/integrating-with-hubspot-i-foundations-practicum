@@ -30,7 +30,7 @@ h1 {
     font-size: 1rem;
 }
 
-.form-wrapper {
+form {
     font-size: 18px;
     max-width: 768px;
     margin: 2rem auto;
@@ -49,10 +49,32 @@ label, input {
 input[type="text"] {
     padding: .25rem;
 }
+select {
+    padding: .40rem;
+    display: block;
+}
 
 input[type="submit"] {
     background-color: lightgrey;
     border: none;
     padding: .375rem 1rem;
     margin-top: 10px;
+}
+
+button{
+    background-color: lightgrey;
+    border: none;
+    padding: .375rem 1rem;
+    margin-top: 10px;
+    border-radius: 15px;
+}
+
+a{
+    text-decoration: none;
+    font-size: small;
+    border-radius: 15px;
+    color: aliceblue;
+    background-color: black;
+    border: none;
+    padding: .375rem 1rem;
 }
